@@ -17,7 +17,7 @@ export default class Dummy extends Plugin {
 
     // merge default options with the ones set by user
     this.opts = Object.assign({}, defaultOptions, opts)
-
+    this.render = this.render.bind(this)
     this.strange = yo`<h1>this is strange 1</h1>`
   }
 
